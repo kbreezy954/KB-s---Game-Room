@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-matte text-white antialiased;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background-image: radial-gradient(circle at top, rgba(255, 45, 209, 0.08), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(0, 245, 255, 0.08), transparent 35%);
+}
+
+.glass-panel {
+  @apply border border-white/10 bg-white/5 backdrop-blur-xl shadow-card;
+}
+
+.neon-text {
+  text-shadow: 0 0 12px rgba(0, 245, 255, 0.5), 0 0 24px rgba(255, 45, 209, 0.35);
+}
+
+.neon-ring {
+  box-shadow: 0 0 0 1px rgba(0, 245, 255, 0.35), 0 0 24px rgba(59, 130, 255, 0.25);
+}
